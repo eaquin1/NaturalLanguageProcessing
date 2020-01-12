@@ -20,7 +20,7 @@ textApi.sentiment({
 }, function(error, response) {
     if (error === null) {                
         var apiData = response
-        console.log(apiData)
+        console.log("apiData", apiData)
         
     } 
 }); 

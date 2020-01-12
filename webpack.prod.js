@@ -8,6 +8,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 module.exports = {
     entry: './src/client/index.js',
     mode: 'production',
+    output: {
+       library: 'Client',
+       libraryTarget: 'var'
+   },
     optimization: {
     minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
 },
