@@ -39,8 +39,8 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-    ], 
-    resolve: {
-       modules: [path.resolve(__dirname, 'src/client/styles'), 'node_modules']
-   }
+    ]
+    //resolve: {
+    //   modules: [path.resolve(__dirname, 'src/client/styles'), 'node_modules']
+   //}
 }
