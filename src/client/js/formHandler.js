@@ -1,38 +1,3 @@
-/*function handleSubmit(event) {
-    event.preventDefault()
-
-    // check what if the submitted link is a URL
-    let formText = document.getElementById('url').value
-    if (Client.checkURL(formText)) {
-      console.log("::: Form Submitted :::")
-      const posting = async(URL ='', data = {}) =>{
-        const response = await fetch(URL, {
-          method: 'POST',
-          credentials: 'same-origin',
-          headers: {
-            'Content-Type': 'application/json',
-            //'Accept': 'application/json'
-          },
-          body: JSON.stringify(data),
-      });
-      
-      try {
-        const newData = await response.json();
-        document.getElementById('results').innerHTML = `<div>Here are your results\:</div><div>label: ${newData.label}</div><div>code: ${newData.code}</div><div>confidence: ${newData.confidence}</div>`;
-        console.log(newData);
-        return newData;
-  } catch(error) {
-    console.log("error", error);
-  }
-};
-  
-  posting('/all', {url: formText})  
-  }
-}
-export { handleSubmit }
-*/
-//test
-
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -52,7 +17,7 @@ function handleSubmit(event) {
 
             try {
                 const newData = await response.json();
-                document.getElementById('results').innerHTML = `<div>These are your results\:</div><div>Polarity: ${newData.polarity}</div><div>Subjectivity: ${newData.subjectivity}</div><div>Polarity confidence: ${newData.polarity_confidence}</div><div>Subjectivity confidence: ${newData.subjectivity_confidence}`
+                document.getElementById('results').innerHTML = `<div>Here is your article\:</div><div>${newData.text}</div><div>This article is ${newData.subjectivity}</div><div>Subjectivity confidence: ${newData.subjectivity_confidence}</div><div>This article is a ${newData.polarity} polarity.</div><div>Polarity confidence: ${newData.polarity_confidence}</div>`
                 return newData
             } catch (error) {
                 console.log("error", error);

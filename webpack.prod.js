@@ -34,5 +34,8 @@ module.exports = {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin({filename: '[name].css'})
-    ]
+    ],
+    resolve: {
+      modules: [path.resolve(__dirname, 'src/client/styles'), 'node_modules']
+   }
 }
