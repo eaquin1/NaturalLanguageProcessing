@@ -38,7 +38,6 @@ app.post('/all', function (req, res) {
         url: req.body.url
     }, function (error, response) {
         if (error === null) {
-          console.log(response);
           res.send(response);
             };
         }

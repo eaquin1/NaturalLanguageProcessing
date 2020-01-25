@@ -27,7 +27,7 @@ Found in this project are:
 - API_ID
 - API_KEY
 
-4) Run `npm run dev-prod` in the terminal
+4) Run `npm run build-prod` in the terminal
 
 5) Open another terminal and run:
 
