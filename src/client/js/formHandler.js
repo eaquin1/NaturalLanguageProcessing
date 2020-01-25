@@ -17,7 +17,8 @@ function handleSubmit(event) {
 
             try {
                 const newData = await response.json();
-                document.getElementById('results').innerHTML = `<div>Here is your article\:</div><div>${newData.text}</div><div>This article is ${newData.subjectivity}</div><div>Subjectivity confidence: ${newData.subjectivity_confidence}</div><div>This article is a ${newData.polarity} polarity.</div><div>Polarity confidence: ${newData.polarity_confidence}</div>`
+                document.getElementById('text').innerHTML = `<div>Here is your article\:</div><div>${newData.text}</div>`
+                document.getElementById('analysis').innerHTML = `<div>This article is ${newData.subjectivity}.</div><div>Subjectivity confidence: ${newData.subjectivity_confidence}</div><div>This article is a ${newData.polarity} polarity.</div><div>Polarity confidence: ${newData.polarity_confidence}</div>`
                 return newData
             } catch (error) {
                 console.log("error", error);

@@ -9,30 +9,30 @@
     <body>
 
         <header>
-            <div class="">
-                Logo
-            </div>
-            <div class="">
-                navigation
+            <div class="header">
+                <h1>Natural Language Processing</h1>
             </div>
         </header>
 
         <main>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="url" type="text" name="input" value="" placeholder="Please type a valid URL">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <form class="form" onsubmit="return handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="Please type a valid URL for analysis">
+                    <input id="button" type="submit" name="submit" value="Submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
                 <strong>Form Results:</strong>
-                <div id="results"></div>
+                <div id="text"></div>
+                <div id="analysis"></div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+          <div class="footer">
+            <a href = "https://sharpdesigns.xyz" title="Emily Aquin" target="_blank">Emily Aquin</a>
+          </div>
         </footer>
   <script>
     // Check that service workers are supported
