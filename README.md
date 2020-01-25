@@ -1,6 +1,6 @@
 # Evaluating Articles with Natural Language Processing
 
-This project uses the the [AYLIEN Text Analysis API](https://aylien.com/text-api/) to implement Natural Language Processing (NLP) on news articles. Wikipedia states that: 
+This project uses the [AYLIEN Text Analysis API](https://aylien.com/text-api/) to implement Natural Language Processing (NLP) on news articles. [Wikipedia](https://en.wikipedia.org/wiki/Natural_language_processing) states that: 
 
 > Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial intelligence
 concerned with the interactions between computers and human (natural) languages, in particular how to program computers to
@@ -13,7 +13,7 @@ Found in this project are:
 - Sass styles
 - Webpack Loaders and Plugins
 - Service workers
-- Aylien API
+- [AYLIEN API](https://aylien.com/text-api/)
 
 ## Configuration
 
