@@ -27,6 +27,8 @@ Found in this project are:
 - API_ID
 - API_KEY
 
-4) Open another terminal and run:
+4) Run `npm run dev-prod` in the terminal
+
+5) Open another terminal and run:
 
 - `npm start` to start your Node.js server
